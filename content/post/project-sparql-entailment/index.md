@@ -131,7 +131,7 @@ If `?p rdfs:domain ?x`, then every subject of a triple using `?p` as its predica
 The range condition works similarly but applies to the object rather than the subject of the triple that contains the range property.
 This allows us to make a statement about the object, such as `:hasDaughter rdfs:range :FemalePerson` (if a person has a daughter, that daughter is a female person). With this range condition, `:Anakin :hasDaughter :Leia` entails `:Leia rdf:type :FemalePerson`.
 ### Datatypes
-A graph can make use of any number of datatypes. They are used to determine the type of literals, such as `:Anakin :favoriteColor "black"^^xsd:string`. Every datatype that occurs in the graph is of type `rdfs:Datatype` and a subclass of `rdfs:Literal`. In a graph that contains the this triple, it is entailed `xsd:string rdf:type rdfs:Datatype` and `xsd:string rdfs:subClassOf rdfs:Literal`.
+A graph can make use of any number of datatypes. They are used to determine the type of literals, such as `:Anakin :favoriteColor "black"^^xsd:string`. Every datatype that occurs in the graph is of type `rdfs:Datatype` and a subclass of `rdfs:Literal`. In a graph that contains this triple, it is entailed `xsd:string rdf:type rdfs:Datatype` and `xsd:string rdfs:subClassOf rdfs:Literal`.
 
 ### Additional Axiomatic Triples
 
